@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מדיניות פרטיות – CleanCo | Politique de Confidentialité</title>
+  <style>
+    :root {
+      --blue: #1a56db;
+      --bg: #f9fafb;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a56db 0%, #1e40af 100%);
+      color: white;
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    header p {
+      opacity: 0.85;
+      font-size: 14px;
+    }
+
+    .lang-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px;
+      background: white;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .lang-btn {
+      padding: 8px 24px;
+      border-radius: 20px;
+      border: 1px solid var(--blue);
+      background: white;
+      color: var(--blue);
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .lang-btn.active {
+      background: var(--blue);
+      color: white;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .section {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+
+    .section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2 span {
+      background: #eff6ff;
+      color: var(--blue);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .section p { color: #374151; margin-bottom: 10px; }
+    .section ul { padding-right: 20px; margin-top: 8px; }
+    .section ul li { margin-bottom: 6px; color: #374151; }
+
+    .updated {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 40px;
+    }
+
+    .contact-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 20px 28px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .contact-box a { color: var(--blue); font-weight: 600; }
+
+    /* Language sections */
+    [data-lang="fr"] { display: none; }
+    [data-lang="he"] { display: block; }
+
+    body.fr [data-lang="fr"] { display: block; }
+    body.fr [data-lang="he"] { display: none; }
+    body.fr { direction: ltr; }
+    body.fr .section ul { padding-left: 20px; padding-right: 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🧹 CleanCo</h1>
+  <p>מדיניות פרטיות | Politique de Confidentialité</p>
+</header>
+
+<div class="lang-toggle">
+  <button class="lang-btn active" onclick="setLang('he')">🇮🇱 עברית</button>
+  <button class="lang-btn" onclick="setLang('fr')">🇫🇷 Français</button>
+</div>
+
+<!-- ===== HEBREW ===== -->
+<div data-lang="he">
+  <div class="container">
+
+    <div class="section">
+      <h2><span>1</span> מבוא</h2>
+      <p>CleanCo ("האפליקציה") מפעילה פלטפורמה לחיבור בין לקוחות למנקים מקצועיים. מדיניות פרטיות זו מסבירה כיצד אנו אוספים, משתמשים ומגנים על המידע האישי שלך.</p>
+      <p>השימוש באפליקציה מהווה הסכמה לתנאי מדיניות זו.</p>
+    </div>
+
+    <div class="section">
+      <h2><span>2</span> מידע שאנו אוספים</h2>
+      <ul>
+        <li>שם מלא, כתובת דוא"ל, מספר טלפון</li>
+        <li>כתובת מגורים ועיר</li>
+        <li>פרטי תשלום (מעובד על ידי Tranzila – לא נשמר אצלנו)</li>
+        <li>סוג המשתמש (לקוח / נותן שירות)</li>
+        <li>היסטוריית הזמנות</li>
+        <li>Token להתראות פוש (Expo Push Token)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span>3</span> שימוש במידע</h2>
+      <ul>
+        <li>יצירת חשבון ואימות זהות</li>
+        <li>ניהול הזמנות ותשלומים</li>
+        <li>שליחת התראות פוש הקשורות לשירות</li>
+        <li>שיפור הפלטפורמה</li>
+        <li>ציות לחוקים ולרגולציות</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span>4</span> שיתוף מידע עם צדדים שלישיים</h2>
+      <p>אנו לא מוכרים את המידע שלך. אנו משתפים מידע רק עם:</p>
+      <ul>
+        <li><strong>Tranzila</strong> – עיבוד תשלומים (Tranzila.com)</li>
+        <li><strong>Expo / Expo Push</strong> – שליחת התראות</li>
+        <li><strong>MongoDB Atlas</strong> – אחסון מאובטח של הנתונים</li>
+        <li><strong>Render</strong> – אירוח שרת האפליקציה</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span>5</span> אבטחת מידע</h2>
+      <p>כל הנתונים מוצפנים בעת העברה (HTTPS/TLS). סיסמאות מוצפנות באמצעות bcrypt. פרטי כרטיסי אשראי אינם נשמרים בשרתינו.</p>
+    </div>
+
+    <div class="section">
+      <h2><span>6</span> שמירת מידע</h2>
+      <p>נתוני חשבון נשמרים כל עוד החשבון פעיל. הזמנות מאורכבות אוטומטית לאחר 90 יום. ניתן לבקש מחיקת חשבון בכל עת.</p>
+    </div>
+
+    <div class="section">
+      <h2><span>7</span> זכויות המשתמש</h2>
+      <ul>
+        <li>גישה למידע האישי שלך</li>
+        <li>תיקון מידע שגוי</li>
+        <li>מחיקת חשבון וכל הנתונים</li>
+        <li>ביטול הסכמה לקבלת התראות</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span>8</span> פרטיות ילדים</h2>
+      <p>האפליקציה אינה מיועדת לילדים מתחת לגיל 18. אנו לא אוספים ביודעין מידע ממשתמשים מתחת לגיל זה.</p>
+    </div>
+
+    <div class="contact-box">
+      <p>📧 לפניות בנושא פרטיות: <a href="mailto:support@cleanco.app">support@cleanco.app</a></p>
+    </div>
+
+    <p class="updated">עודכן לאחרונה: מאי 2025</p>
+  </div>
+</div>
+
+<!-- ===== FRENCH ===== -->
+<div data-lang="fr">
+  <div class="container">
+
+    <div class="section">
+      <h2><span>1</span> Introduction</h2>
+      <p>CleanCo exploite une plateforme mettant en relation des clients avec des prestataires de nettoyage professionnels. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations personnelles.</p>
+      <p>L'utilisation de l'application vaut acceptation de cette politique.</p>
+    </div>
+
+    <div class="section">
+      <h2><span>2</span> Données collectées</h2>
+      <ul>
+        <li>Nom complet, adresse e-mail, numéro de téléphone</li>
+        <li>Adresse et ville</li>
+        <li>Informations de paiement (traitées par Tranzila – non stockées chez nous)</li>
+        <li>Type d'utilisateur (client / prestataire)</li>
+        <li>Historique des réservations</li>
+        <li>Token de notifications push (Expo Push Token)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span>3</span> Utilisation des données</h2>
+      <ul>
+        <li>Création de compte et authentification</li>
+        <li>Gestion des réservations et paiements</li>
+        <li>Envoi de notifications push liées au service</li>
+        <li>Amélioration de la plateforme</li>
+        <li>Conformité légale et réglementaire</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span>2</span> Partage avec des tiers</h2>
+      <p>Nous ne vendons pas vos données. Nous partageons uniquement avec :</p>
+      <ul>
+        <li><strong>Tranzila</strong> – traitement des paiements</li>
+        <li><strong>Expo Push</strong> – envoi de notifications</li>
+        <li><strong>MongoDB Atlas</strong> – stockage sécurisé</li>
+        <li><strong>Render</strong> – hébergement du serveur</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span>5</span> Sécurité</h2>
+      <p>Toutes les données sont chiffrées en transit (HTTPS/TLS). Les mots de passe sont hachés avec bcrypt. Les données de carte bancaire ne sont jamais stockées sur nos serveurs.</p>
+    </div>
+
+    <div class="section">
+      <h2><span>6</span> Conservation des données</h2>
+      <p>Les données de compte sont conservées tant que le compte est actif. Les réservations sont archivées automatiquement après 90 jours. Vous pouvez demander la suppression de votre compte à tout moment.</p>
+    </div>
+
+    <div class="section">
+      <h2><span>7</span> Vos droits</h2>
+      <ul>
+        <li>Accès à vos données personnelles</li>
+        <li>Rectification des informations incorrectes</li>
+        <li>Suppression du compte et de toutes les données</li>
+        <li>Retrait du consentement aux notifications</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span>8</span> Mineurs</h2>
+      <p>L'application n'est pas destinée aux personnes de moins de 18 ans. Nous ne collectons pas sciemment de données auprès de mineurs.</p>
+    </div>
+
+    <div class="contact-box">
+      <p>📧 Contact : <a href="mailto:support@cleanco.app">support@cleanco.app</a></p>
+    </div>
+
+    <p class="updated">Dernière mise à jour : Mai 2025</p>
+  </div>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.body.className = lang === 'fr' ? 'fr' : '';
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'fr' ? 'ltr' : 'rtl';
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
